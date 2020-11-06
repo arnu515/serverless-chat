@@ -54,6 +54,14 @@
     }
 
     onDestroy(unsubscribe)
+
+    function logout() {
+        if (auth.currentUser) {
+            auth.signOut().then(() => {}).catch(e => {
+                throw new Error(e)
+            });
+        }
+    }
 </script>
 
 {#if typeof user === "undefined"}
@@ -62,6 +70,7 @@
     {#if user}
         <h1 class="w3-jumbo w3-center">Serverless chat</h1>
         <p class="w3-center">Chatroom</p>
+        <p class="w3-center"><button class="w3-button w3-blue" on:click={logout}>Logout</button></p>
 
         <br>
         <div class="w3-container w3-border w3-border-gray" style="margin: 0 auto; width: 60%; height: 600px; overflow-y: auto;">
