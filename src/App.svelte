@@ -1,8 +1,8 @@
 <script lang="ts">
     import router from "page";
     import About from "./routes/about.svelte";
-    import Auth from "./routes/auth.svelte";
-import Chat from "./routes/chat.svelte";
+    import Auth from "./routes/auth.svelte";        
+    import Chat from "./routes/chat.svelte";
     import Index from "./routes/index.svelte";
     import NotFound from "./routes/notfound.svelte";
     import { queryString } from "./services/util"
