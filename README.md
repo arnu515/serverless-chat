@@ -94,3 +94,5 @@ firebase deploy --only hosting
 ```
 
 Your app should be live on projectname.web.app! You can view my version [here](https://serverless-svelte.web.app)
+
+I would like to contribute to this
